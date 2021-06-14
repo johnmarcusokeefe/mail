@@ -1,16 +1,64 @@
-textarea {
-    min-height: 400px;
+#archive {
+    float: right;
+    font-size: 8pt;
+    padding: 3px;
 }
-#emails {
+.archive-button {
+    font-size: 10px;
+}
+.button-group:after {
+    clear: both;
+}
+.color-light-grey {
+    background: lightgrey;
+}
+.clickzone {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.checkbox {
     display: block;
+    border: 1px dotted gray;
+    width: auto;
+    margin: auto;
+    margin-top: 5px;
 }
-.mail-line {
+.clearfix {
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 10px;
+}
+#compose-body {
+    font-size: 11pt;
+}
+#emails-view {
+    display: block;
+    height: 30px;
+}
+.email-body {
+    border-top: 1px dotted grey;
+    margin-top: 20px;
+}
+#emails-view h3 {
+    float: left;
+}
+.email-line {
+    display: block;
+    margin-top: 5px;
     width: 100%;
     border: 1px dotted gray;
-    list-style: none;
-    margin-bottom: 5px;
-    padding: 5px;
-    
+    border-radius: 5px;
+}
+.email-line:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.emailbody {
+    margin-top: 5px;
+    border-top: 1px dotted gray;
 }
 .float-left {
     float: left;
@@ -18,28 +66,68 @@ textarea {
 .float-right {
     float: right;
 }
-.clearfix {
-    clear: both;
+
+.light-gray {
+    background: #f1f1f1;
 }
-.sender {
+#options {
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px dotted grey;
+}
+.reply-button {
+    font-size: 10px;
+    width: 100px;
     margin-right: 10px;
 }
-#emails-list {
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    list-style: none;
+#read-link {
+    margin-top: 15px;
+    margin-right: 10px;
+    float: right;
+    font-size: 11px;
+    width: auto;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 2px;
 }
-#emails-list li {
-    margin-top: 2px;
+#read {
+    float: right;
+    font-size: 8pt;
+    padding: 3px;
 }
-.email-field {
-    margin-bottom: 10px;
+.read-check {
+    float: left;
+    margin: auto;
+    margin-top: 5px;
+    width: 8%;
 }
-#e-view {
-    display: none;
+.subject {
+    width: 30%;
 }
-.email-body {
-    border-top: 1px dotted grey;
-    margin-top: 20px;
+.sender {
+    width: 30%;
+   
+}
+.sender-single {
+    width: auto;
+}
+.subject-single {
+    width: auto;
+}
+.timestamp-40 {
+    width: 39%;
+    text-align: right;
+}
+.timestamp-single {
+    width: auto;
+}
+textarea {
+    min-height: 400px;
+}
+.timestamp {
+    width: 32%;
+    text-align: right;
+}
+.white {
+    background: white;
 }

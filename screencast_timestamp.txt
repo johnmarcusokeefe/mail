@@ -1,0 +1,27 @@
+Mail Screencast Timestamp
+
+
+Send Mail
+
+    - send an email
+
+Mailbox
+
+    - Load on visit
+        - Inbox
+        - Sent
+        - Archive
+    
+View Email
+
+    - Open email and mark as read
+
+Archive and Unarchive
+
+    - view email archive
+    - view archived mail unarchive
+    - not it send
+
+Reply
+
+    - reply and rely to as date appends

@@ -64,6 +64,7 @@ def compose(request):
             body=body,
             read=user == request.user
         )
+        print("email body", body)
         email.save()
         for recipient in recipients:
             email.recipients.add(recipient)
@@ -82,12 +83,15 @@ def mailbox(request, mailbox):
         )
     elif mailbox == "sent":
         emails = Email.objects.filter(
+            # archived false jok
             user=request.user, sender=request.user
         )
-    elif mailbox == "archive":
+    elif mailbox == "archived":
         emails = Email.objects.filter(
             user=request.user, recipients=request.user, archived=True
+            # user=request.user, archived=True allows all emails to be archived
         )
+        print("archived emails",emails)
     else:
         return JsonResponse({"error": "Invalid mailbox."}, status=400)
 
@@ -177,3 +181,4 @@ def register(request):
         return HttpResponseRedirect(reverse("index"))
     else:
         return render(request, "mail/register.html")
+
